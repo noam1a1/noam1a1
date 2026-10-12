@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Noam Apter, Full-Stack Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#151a3a"/>
+      <stop offset="1" stop-color="#2a1748"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.35" r="0.45">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <style>
+      .name { font: 800 64px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #f4f6fb; letter-spacing: -1px; }
+      .role { font: 500 24px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #c9cfe6; }
+      .mono { font: 500 17px 'Cascadia Code', Consolas, 'Courier New', monospace; fill: #8b93b8; }
+      .mono b { fill: #5eead4; }
+      .chip { font: 600 14px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #e9e5ff; }
+      .cursor { animation: blink 1.1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#grid)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#glow)"/>
+
+  <!-- agent network motif -->
+  <g stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1.5" fill="none">
+    <path d="M930 90 L1010 150 L1100 110 M1010 150 L990 240 L1090 220 L1100 110 M990 240 L900 200 L930 90"/>
+  </g>
+  <g fill="#5eead4">
+    <circle class="pulse" cx="930" cy="90" r="6"/>
+    <circle cx="1010" cy="150" r="9" fill="#a78bfa"/>
+    <circle class="pulse" cx="1100" cy="110" r="5"/>
+    <circle cx="990" cy="240" r="6"/>
+    <circle class="pulse" cx="1090" cy="220" r="7" fill="#a78bfa"/>
+    <circle cx="900" cy="200" r="4"/>
+  </g>
+
+  <rect x="64" y="62" width="64" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="62" y="140" class="name">Noam Apter</text>
+  <text x="64" y="182" class="role">Full-Stack Developer · CS Student · Co-founder @ Medusa Dynamics</text>
+  <text x="64" y="232" class="mono">$ <tspan fill="#5eead4">stack</tspan> --primary  java  spring-boot  typescript  react  next.js<tspan class="cursor" fill="#5eead4"> ▍</tspan></text>
+
+  <g transform="translate(64 256)">
+    <rect width="128" height="30" rx="15" fill="#5eead4" fill-opacity="0.12" stroke="#5eead4" stroke-opacity="0.5"/>
+    <circle cx="18" cy="15" r="4.5" fill="#5eead4" class="pulse"/>
+    <text x="32" y="20" class="chip">Open to work</text>
+  </g>
+  <g transform="translate(204 256)">
+    <rect width="150" height="30" rx="15" fill="#a78bfa" fill-opacity="0.12" stroke="#a78bfa" stroke-opacity="0.5"/>
+    <text x="16" y="20" class="chip">📍 Ashdod, Israel</text>
+  </g>
+</svg>
